@@ -1,0 +1,2 @@
+curl -X POST -d mobile=5555555555 -d password=asdfasdf http://localhost:3000/authenticate | python -m json.tool
+
