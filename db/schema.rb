@@ -41,8 +41,6 @@ ActiveRecord::Schema.define(version: 2019_08_12_222819) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["lat", "lon"], name: "index_coordinates_on_lat_and_lon", unique: true
-    t.index ["lat"], name: "index_coordinates_on_lat", unique: true
-    t.index ["lon"], name: "index_coordinates_on_lon", unique: true
   end
 
   create_table "meetings", force: :cascade do |t|
