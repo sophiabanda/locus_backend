@@ -1,0 +1,4 @@
+
+TOKEN='eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NjU4MDQzNjZ9.faC3F47Vp4p-hD42w4MgC2oIAu6Be5tAKxeqefvN35g'
+
+curl -H "Authorization: $TOKEN" http://localhost:3000/cities
