@@ -1,6 +1,8 @@
 class AddressesController < ApplicationController
   before_action :set_address, only: [:show, :update, :destroy]
 
+  require 'HTTParty'
+  
   # GET /addresses
   def index
     @addresses = Address.all
@@ -34,9 +36,9 @@ class AddressesController < ApplicationController
   end
 
   # DELETE /addresses/1
-  def destroy
-    @address.destroy
-  end
+  # def destroy
+  #   @address.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -4,8 +4,8 @@ class MeetingsController < ApplicationController
   # GET /meetings
   def index
     @meetings = Meeting.all
-
-    render json: @meetings
+    @response = HTTParty.get("https://api.yelp.com/v3/businesses/search?latitude=26.224963&longitude=-80.123168&limit=10", headers: {"Content-Type" => "application/json", "Authorization" => "Bearer GXHILCW8iiPEDUbfYwUXO2J5-CLmd4LHj0jjNYJPg-8eUTtISLw8eXedGhzH_6eFj7cy8sfYAH-5QvT8r6zF9JVybTsiFOq7FiDCzUwVAqRSOuvL9KfAIlAfAaRMXXYx"})
+    render json: @response
   end
 
   # GET /meetings/1
@@ -33,10 +33,11 @@ class MeetingsController < ApplicationController
     end
   end
 
+
   # DELETE /meetings/1
-  def destroy
-    @meeting.destroy
-  end
+  # def destroy
+  #   @meeting.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

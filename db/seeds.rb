@@ -118,3 +118,7 @@ venue = Venue.find_or_create_by(name: Faker::Restaurant.name, address: address)
 p venue
 meeting = Meeting.create(coordinate: midpoint_coordinate, user: anonymous_user)
 p meeting
+
+#utilize end point of prior api to provide needed data to yelp api
+
+
