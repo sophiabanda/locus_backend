@@ -1,0 +1,1 @@
+curl -sS -X GET -H "Authorization: $TOKEN" -d lat=25.75059 -d lon=-80.34264 http://localhost:3000/places_choices/ | python -m json.tool
