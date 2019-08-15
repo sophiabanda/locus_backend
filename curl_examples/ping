@@ -1,0 +1,1 @@
+curl -isS -X GET -H "Authorization: $(<$s)" http://localhost:3000/ping 

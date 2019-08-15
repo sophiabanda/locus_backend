@@ -1,0 +1,1 @@
+curl -isS -X GET -H "Authorization: ''" http://zip.thruhere.net:3000/ping 
