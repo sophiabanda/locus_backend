@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: chris_mixolidia_sophia_tushar_backend
-  username: chris_mixolidia_sophia_tushar_backend
-  password: <%= ENV['TODO_DATABASE_PASSWORD'] %>
+  database: inbetween_production
+  # username: chris_mixolidia_sophia_tushar_backend
+  # password: <%= ENV['TODO_DATABASE_PASSWORD'] %>
