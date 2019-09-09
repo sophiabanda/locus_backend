@@ -17,12 +17,13 @@ anonymous_user.password = password
 anonymous_user.password_confirmation = password
 anonymous_user.save!
 
+ miim.apps.selfip.com
 
 
 FL = 'FL'
 API_KEY = '41150c82c3014e3a87abb252f65ef0bb'
-ADDRESS_TO_COORDINATES_URL_TEMPLATE = "https://ssll.dokku-hosted.thruhere.net/?api_key=#{API_KEY}&"
-COORDINATES_TO_MIDPOINT_URL_TEMPLATE = "https://miim.dokku-hosted.thruhere.net/midpoint?api_key=#{API_KEY}&"
+ADDRESS_TO_COORDINATES_URL_TEMPLATE = "ssll.apps.selfip.com/?api_key=#{API_KEY}&"
+COORDINATES_TO_MIDPOINT_URL_TEMPLATE = "miim.apps.selfip.com/midpoint?api_key=#{API_KEY}&"
 field_names = %w[STREET CITY]
 
 puts "The user is presented with a form with #{field_names.join(', ')} fields."
